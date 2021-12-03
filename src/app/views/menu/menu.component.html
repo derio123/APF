@@ -1,0 +1,50 @@
+<ion-content>
+  <ion-card class="item">
+    <!--  <ion-row>
+        <ion-col col-4>
+          <div class="user-avatar">
+            <ion-avatar class="avatar1">
+              <img src="./../../assets/imgs/806123800_191203.jpg">
+            </ion-avatar>
+          </div>
+        </ion-col>
+        <ion-col col-8>
+          
+           <h2 ion-text text-center class="no-margin bold text-white">
+            Rubiria Andressa
+          </h2> -->
+    <!-- <ion-text text-center></ion-text> 
+        </ion-col>
+      </ion-row> -->
+    <ion-list class="item">
+      <ion-list-header>
+        <ion-label>Opções </ion-label>
+      </ion-list-header>
+      <ion-item button (click)="openAddLancar()" routerDirection="auto" shape="round">
+        <!--(click)="logout()" -->
+        <ion-icon name="jet" color="primary"></ion-icon>
+        <ion-text color="primary">Lancar</ion-text>
+      </ion-item>
+      <ion-item button shape="round" (click)="openContas()" routerDirection="auto" color="orange">
+        <ion-icon name="paper" color="primary"></ion-icon>
+        <ion-text color="primary">Contas</ion-text>
+      </ion-item>
+      <ion-item button (click)="openSaldo($event)">
+        <ion-icon name="logo-usd" item-start color="primary"></ion-icon>
+        <ion-text color="primary">Saldo</ion-text>
+      </ion-item>
+      <!-- <ion-button ion-item>
+                <ion-icon name="cafe" item-start></ion-icon>
+                Cafe  
+              </ion-button> -->
+    </ion-list>
+    <ion-button size="small" expand="block" shape="round" (click)="fechar()">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+    </ion-button>
+    <!-- <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+      <ion-fab-button (click)="fechar()">
+        <ion-icon name="close"></ion-icon>
+      </ion-fab-button>
+    </ion-fab> -->
+  </ion-card>
+</ion-content>
